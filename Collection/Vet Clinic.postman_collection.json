@@ -1,0 +1,125 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Vet Clinic",
+		"_postman_id": "1cdea9d7-b123-e20a-c2d2-319123fb1e6f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateClinic",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ahmed\",\n\t\"address\":\"Menofia\",\"phone\":\"phone\",\"workingDays\":\"St-sun-mon\",\"email\":\"ahmed@gmail.com\",\"socialUrl\":\"\"\n}"
+				},
+				"url": "http://localhost:8080/clinic",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Clinic",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ahmed\",\n\"address\":\"Menofia\",\n\"phone\":\"phone\",\n\"workingDays\":\"St-sun-mon\",\n\"email\":\"ahmed@gmail.com\",\n\"socialUrl\":\"http://www.facebook.com\"\n}"
+				},
+				"url": "http://localhost:8080/clinic/1",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Clinic",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ahmed\",\n\"address\":\"Menofia\",\n\"phone\":\"phone\",\n\"workingDays\":\"St-sun-mon\",\n\"email\":\"ahmed@gmail.com\",\n\"socialUrl\":\"http://www.facebook.com\"\n}"
+				},
+				"url": "http://localhost:8080/clinic/1",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllclinic",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ahmed\",\n\t\"address\":\"Menofia\",\"phone\":\"phone\",\"workingDays\":\"St-sun-mon\",\"email\":\"ahmed@gmail.com\",\"socialUrl\":\"\"\n}"
+				},
+				"url": "http://localhost:8080/clinic",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getoneClinic",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ahmed\",\n\t\"address\":\"Menofia\",\"phone\":\"phone\",\"workingDays\":\"St-sun-mon\",\"email\":\"ahmed@gmail.com\",\"socialUrl\":\"\"\n}"
+				},
+				"url": "http://localhost:8080/clinic/1",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ahmed\",\n\t\"address\":\"Menofia\",\"phone\":\"phone\",\"workingDays\":\"St-sun-mon\",\"email\":\"ahmed@gmail.com\",\"socialUrl\":\"\"\n}"
+				},
+				"url": "http://localhost:8080/clinic/1",
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

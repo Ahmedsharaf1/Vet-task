@@ -1,0 +1,201 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Vet Doctor",
+		"_postman_id": "80b7bc7f-9c87-5a79-42c0-c849a0ba4564",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ahmed\"\r\n\"phone\":\"01022892114\",\r\n\"bio\":\"ahmed@gmail.com\",\r\n\"socialUrl\":\"\"}"
+				},
+				"url": "http://localhost:8080/doctor",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addphototodoctor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "96696315_541924213186559_6855928609522057216_n.jpg"
+						},
+						{
+							"key": "doctorId",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "petId",
+							"value": "",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8080/uploadFile",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getdoctorimage",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ahmed\"\r\n\"phone\":\"01022892114\",\r\n\"bio\":\"ahmed@gmail.com\",\r\n\"socialUrl\":\"\"}"
+				},
+				"url": "http://localhost:8080/doctorphoto/1",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ahmed\",\n\"address\":\"Menofia\",\n\"phone\":\"phone\",\n\"workingDays\":\"St-sun-mon\",\n\"email\":\"ahmed@gmail.com\",\n\"socialUrl\":\"http://www.facebook.com\"\n}"
+				},
+				"url": "http://localhost:8080/doctor/1",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Assign doctor to clinic",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ahmed\",\n\"address\":\"Menofia\",\n\"phone\":\"phone\",\n\"workingDays\":\"St-sun-mon\",\n\"email\":\"ahmed@gmail.com\",\n\"socialUrl\":\"http://www.facebook.com\"\n}"
+				},
+				"url": "http://localhost:8080/assign/1/1",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deAssign doctor to clinic",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"name\": \"ahmed\",\n    \"phone\": \"01022892114\",\n    \"bio\": \"ahmed@gmail.com\",\n    \"clinic\": null,\n    \"visit\": null\n}"
+				},
+				"url": "http://localhost:8080/deassign/1/1",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ahmed\",\n\"address\":\"Menofia\",\n\"phone\":\"phone\",\n\"workingDays\":\"St-sun-mon\",\n\"email\":\"ahmed@gmail.com\",\n\"socialUrl\":\"http://www.facebook.com\"\n}"
+				},
+				"url": "http://localhost:8080/doctor/1",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ahmed\",\n\t\"address\":\"Menofia\",\"phone\":\"phone\",\"workingDays\":\"St-sun-mon\",\"email\":\"ahmed@gmail.com\",\"socialUrl\":\"\"\n}"
+				},
+				"url": "http://localhost:8080/doctor",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getone",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ahmed\",\n\t\"address\":\"Menofia\",\"phone\":\"phone\",\"workingDays\":\"St-sun-mon\",\"email\":\"ahmed@gmail.com\",\"socialUrl\":\"\"\n}"
+				},
+				"url": "http://localhost:8080/doctor/1",
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

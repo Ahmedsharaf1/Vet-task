@@ -1,0 +1,104 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Vet pet",
+		"_postman_id": "9af825cf-7e56-8f2c-1b3c-19ff51ac0e1e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Createprt",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"ahmed\",\n    \"email\": \"ahmed@gmail.com\",\n    \"phone\": \"phone\",\n    \"gender\": null,\n    \"address\": \"Menofia\",\n    \"pets\": null\n}"
+				},
+				"url": "http://localhost:8080/owner",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update pet",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"name\": \"ahmed\",\n    \"email\": \"ahmed@gmail.com\",\n    \"phone\": \"phone\",\n    \"gender\": \"male\",\n    \"address\": \"Menofia\",\n    \"pets\": null\n}"
+				},
+				"url": "http://localhost:8080/owner/1",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Pet",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": "http://localhost:8080/owner/3",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll pet",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ahmed\",\n\t\"address\":\"Menofia\",\"phone\":\"phone\",\"workingDays\":\"St-sun-mon\",\"email\":\"ahmed@gmail.com\",\"socialUrl\":\"\"\n}"
+				},
+				"url": "http://localhost:8080/owner",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getonePet",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ahmed\",\n\t\"address\":\"Menofia\",\"phone\":\"phone\",\"workingDays\":\"St-sun-mon\",\"email\":\"ahmed@gmail.com\",\"socialUrl\":\"\"\n}"
+				},
+				"url": "http://localhost:8080/owner/1",
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
